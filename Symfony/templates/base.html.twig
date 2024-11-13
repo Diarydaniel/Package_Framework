@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+
+    </head>
+    <body>
+
+        <nav
+            class="flex w-full items-center border-b border-border-primary bg-background-primary lg:min-h-18 lg:px-[5%] p-4"
+            >
+            <div
+                class="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4"
+            >
+                <div
+                class="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0"
+                >
+                <a href="#"
+                    ><img src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg" alt="Logo image"
+                /></a>
+                <div class="flex items-center gap-4 lg:hidden">
+                    <button class="-mr-2 flex size-12 flex-col items-center justify-center">
+                        <span class="my-[3px] h-0.5 w-6 bg-black" style="will-change: transform"></span
+                        ><span class="my-[3px] h-0.5 w-6 bg-black"></span
+                        ><span class="my-[3px] h-0.5 w-6 bg-black" style="will-change: transform"></span>
+                    </button>
+                </div>
+                </div>
+                <div
+                    class="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+                    style="height: var(--height-closed, 0)"
+                    >
+                    <div class="first:pt-4 lg:first:pt-0">
+                        <a href="{{ path('home') }}" class="block py-3 text-md lg:px-4 lg:py-2 lg:text-base">Home</a>
+                    </div>
+                    <div class="first:pt-4 lg:first:pt-0">
+                        <a href="{{ path('etudiant') }}" class="block py-3 text-md lg:px-4 lg:py-2 lg:text-base">Etudiant</a>
+                    </div>
+                    <div class="first:pt-4 lg:first:pt-0">
+                        <a href="{{ path('professeur') }}" class="block py-3 text-md lg:px-4 lg:py-2 lg:text-base">Professeur</a>
+                    </div>  
+                </div>
+            </div>
+        </nav>
+
+        {% block test%}
+        {% endblock test%}
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>

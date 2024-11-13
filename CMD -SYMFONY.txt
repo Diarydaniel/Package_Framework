@@ -1,0 +1,7 @@
+
+Pour créer un projet Symfony : composer create-project symfony/website-skeleton nom_projet
+pour lance : php -S localhost:8000 -t public
+pour voir les listes des commandes : php bin/console list
+pour créer un controller : php bin/console make:controller
+pour créer un table : php bin/console make:entity
+pour créer un base de donner : php bin/console doctrine:database:create

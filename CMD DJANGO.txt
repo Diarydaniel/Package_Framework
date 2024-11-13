@@ -1,0 +1,7 @@
+créer un projet : python -m django startproject nom-project
+
+créer un application  :python manage.py startapp
+
+lance serveur : python manage.py runserver
+
+lance un server python app.y

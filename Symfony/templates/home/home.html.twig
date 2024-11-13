@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Gestion d'etablissement{% endblock %}
+
+{% block body %}
+
+        <!-- Début section Hero -->
+        <section id="relume" class="px-[5%] py-16 md:py-24 lg:py-28">
+            <div class="container">
+                <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+                    <!-- Texte -->
+                    <div>
+                        <h1 class="mb-5 text-4xl font-bold md:mb-6 md:text-9xl lg:text-5xl">
+                            Gestion Simplifiée des Établissements
+                        </h1>
+                        <p>Notre application web vous permet de gérer vos établissements de manière rapide et efficace. Que ce soit pour suivre les informations des étudiants, des professeurs, ou pour organiser les ressources et les événements, notre plateforme centralise toutes les données importantes en un seul endroit. Gagnez du temps, réduisez les erreurs et optimisez la gestion au quotidien grâce à une interface intuitive et des fonctionnalités robustes adaptées à vos besoins.</p>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="relative flex w-full">
+                        <!-- Première image, positionnée en bas à gauche -->
+                        <div class="absolute bottom-[10%] left-0 right-auto top-auto w-[45%]">
+                            <img src="{{ asset('assets/images/1.jpg') }}" alt="Image 1" class="image_rounded object-cover w-full h-auto" />
+                        </div>
+                        
+                        <!-- Image centrale -->
+                        <div class="mx-[15%] w-full">
+                            <img src="{{ asset('assets/images/2.jpg') }}" alt="Image 2" class="rounded-md object-cover w-full h-auto" />
+                        </div>
+                        
+                        <!-- Troisième image, positionnée en haut à droite -->
+                        <div class="absolute bottom-auto left-auto right-0 top-[10%] w-[40%]">
+                            <img src="{{ asset('assets/images/3.jpg') }}" alt="Image 3" class="image_rounded object-cover w-full h-auto" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin section hero -->
+
+        <!-- Section Footer -->
+        <footer class="px-[5%] py-12 md:py-18 lg:py-20">
+            <div class="container">
+
+                <div class="h-px w-full bg-black"></div>
+                <div
+                class="flex flex-col-reverse items-start justify-between pb-4 pt-6 text-sm md:flex-row md:items-center md:pb-0 md:pt-8"
+                >
+               <p class="mt-6 md:mt-0">© 2024 par <span class="text-orange-400">Diary </span>Daniel</p>
+                <ul class="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
+                    <li><a href="#">Code clair</a></li> 
+                    <li><a href="#">Solution efficace</a></li>
+                    <li><a href="#">Pensée agile</a></li>
+                </ul>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+{% endblock %}
