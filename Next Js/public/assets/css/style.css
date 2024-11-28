@@ -13143,6 +13143,7 @@ figcaption {
   font-size: 16px;
   color: var(--color-lightn);
   line-height: 24px;
+  text-align: justify;
 }
 .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-footer .info {
   display: flex;
@@ -13933,6 +13934,7 @@ figcaption {
   color: var(--color-lightn);
   margin-bottom: 22px;
   transition: var(--transition);
+  text-align: justify;
 }
 .rn-service .inner .content .read-more-button {
   height: 0;
