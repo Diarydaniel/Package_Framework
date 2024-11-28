@@ -19,7 +19,7 @@ contact_form.addEventListener("submit",(e)=>{
     }
 
 
-    emailjs.send("service_eahizlw","template_8hqk352", {
+    emailjs.send("service_7ip4jca","template_215sbll", {
         name: data.name,
         email: data.email,
         message: JSON.stringify(data)
