@@ -12928,6 +12928,7 @@ figcaption {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+  border-radius: 20px 0 20px 0;
 }
 .slide .thumbnail.box-gradient::before {
   width: 100%;
@@ -13213,7 +13214,7 @@ figcaption {
 .slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image img {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
 }
 .slide.slider-style-4 {
